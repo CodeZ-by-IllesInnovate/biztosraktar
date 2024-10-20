@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BiztosRaktár</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="h-screen font-lexend">
+    <div
+        class="bg-[#172C54] text-white py-2 px-4 md:px-[90px] gap-4 md:gap-[24px] flex flex-col md:flex-row items-center w-full">
+        <div class="flex items-center gap-2 max-w-[175px] max-h-[27px] ">
+            <ion-icon name="call-outline"></ion-icon>
+            <span>+36 30 883 0991</span>
+        </div>
+        <div class="flex items-center gap-2 max-h-[27px] max-w-[241px]">
+            <ion-icon name="mail-outline"></ion-icon>
+            <span>berles@biztosraktar.hu</span>
+        </div>
+        <div class="flex items-center gap-2 max-h-[27px] max-w-[121px]">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>H–V: 0-24</span>
+        </div>
+    </div>
+
+    <header class="h-[118px] max-h-[118px]">
+        <nav>
+            <div
+                class="flex flex-wrap items-center justify-between mx-auto py-4 px-4 md:py-[31px] md:px-[90px] max-h-[118px]">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img class="max-w-[150px] md:max-w-[225px]" src="assets/img/logo.png" alt="...">
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <div class="flex gap-2 text-white">
+                        <button type="button"
+                            class="button_anim text-[#257BEB] border border-[#257BEB] hover:bg-[#73a7eb] hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-4 py-2 text-center items-center flex gap-3">
+                            <ion-icon name="person-outline"></ion-icon> Belépés</button>
+                        <button type="button"
+                            class="bg-[#257BEB] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-sm text-sm px-4 py-2 text-center items-center hidden md:flex gap-3">
+                            Regisztráció</button>
+                    </div>
+                    <button data-collapse-toggle="navbar-cta" type="button" onclick="onToggleMenu()"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-600 rounded-sm md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 z-40"
+                    id="navbar-cta">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white  ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 md:p-0 text-[#5D5A88] hover:text-[#46418d] bg-blue-700 rounded md:bg-transparent"
+                                aria-current="page">Raktárak</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 md:p-0 text-[#5D5A88] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  ">Bérlés</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 md:p-0 text-[#5D5A88]  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700  ">Kapcsolat</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section
+        class="flex flex-col lg:flex-row py-5 px-5 md:px-[90px] items-center md:items-center justify-center md:justify-normal gap-8">
+        <div class="xl:w-1/2">
+            <div class="relative overflow-hidden rounded-[24px]">
+                <img src="assets/img/Map.png" alt="maps"
+                    class="md:max-w-[914px] xl:max-w-[614px] max-w-[100%] hero-image">
+            </div>
+
+            <!-- BADGES -->
+            <div>
+                <div
+                    class="badge absolute top-[82%] left-[2rem] 2xl:left-[17rem] 2xl:top-[28%] xl:top-[33%] xl:left-[17rem] md:top-[20%] md:left-[21rem] z-10">
+                    <ion-icon name="location-outline" class="text-3xl text-[#257BEB]"></ion-icon>
+                    <div class="flex flex-col text-left gap-x-2">
+                        <div class="text-[18px] leading-none font-semibold text-[#257BEB]"><span>Budapest X.</span>
+                        </div>
+                        <div class="max-w-[70px] leading-none text-[15px] font-light">Keresztúri út 86/C</div>
+                    </div>
+                </div>
+
+                <div
+                    class="badge absolute top-[400px] left-[10rem] 2xl:left-[34rem] 2xl:top-[42%] xl:left-[31rem] xl:top-[48%] md:top-[30%] md:left-[31rem] z-10">
+                    <ion-icon name="location-outline" class="text-3xl text-[#257BEB]"></ion-icon>
+                    <div class="flex flex-col text-left gap-x-2">
+                        <div class="text-[18px] leading-none font-semibold text-[#257BEB]"><span>Budapest X.</span>
+                        </div>
+                        <div class="max-w-[150px] leading-none text-[15px] font-light">Keresztúri út 108/C</div>
+                    </div>
+                </div>
+                <div
+                    class="badge absolute top-[280px] left-[4rem] 2xl:left-[8rem] 2xl:top-[68%] xl:left-[8rem] xl:top-[80%] md:top-[55%] md:left-[11rem] z-10">
+                    <ion-icon name="location-outline" class="text-3xl text-[#257BEB]"></ion-icon>
+                    <div class="flex flex-col text-left gap-x-2">
+                        <div class="text-[18px] leading-none font-semibold text-[#257BEB]"><span>Kápolnásnyék</span>
+                        </div>
+                        <div class="max-w-[70px] leading-none text-[15px] font-light">Olajtelep</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTAINER -->
+            <img src="assets/img/container.png" alt="container"
+                class="absolute top-[17rem] left-[-7rem] w-[600px] max-w-[1500px] md:w-[1000px] md:left-[-3rem] md:top-[10rem] xl:top-48 xl:left-[-8rem] xl:w-[1000px] xl:max-h-[662px] z-1">
+        </div>
+
+        <div
+            class="xl:w-1/2 sm:max-w-[90%] max-w-[600px] md:max-w-[90%] xl:max-w-[614px] flex flex-col items-start gap-[48px] sm:gap-[32px]  pt-[64px] sm:pt-[48px] sm:px-[24px] xl:pl-[32px]">
+            <div class="flex flex-col gap-[24px] sm:gap-[16px]">
+                <p class="text-[#257BEB] font-normal leading-6 text-sm sm:text-base">AUTOMATIZÁLT RAKTÁRBÉRLÉS</p>
+                <h1 class="text-[#111827] text-[24px] sm:text-[36px] md:text-[48px] font-bold leading-[130%]">Őrzött
+                    <span class="text-[#257BEB]">Raktárainkban</span>
+                    biztonságban
+                    tudhatja
+                    értékeit
+                </h1>
+                <p class="text-[#5D5A88] font-normal leading-6">Több telephelyen is kínálunk raktárbérlési lehetőséget.
+                    Az egész folyamatot
+                    online, kényelmesen
+                    otthonról vagy a
+                    mobiljáról is intézheti.</p>
+                <div class="flex flex-row gap-[48px] sm:gap-[32px] sm:mt-[24px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none">
+                        <g clip-path="url(#clip0_199_724)">
+                            <path
+                                d="M46.5938 23.4446C47.3704 23.4446 48 22.815 48 22.0383V2.25708C48 1.48046 47.3704 0.85083 46.5938 0.85083H1.40625C0.629625 0.85083 0 1.48046 0 2.25708V22.0383C0 22.815 0.629625 23.4446 1.40625 23.4446H5.71875V26.2571H1.40625C0.629625 26.2571 0 26.8867 0 27.6633V47.4446C0 48.2212 0.629625 48.8508 1.40625 48.8508H46.5938C47.3704 48.8508 48 48.2212 48 47.4446V27.6633C48 26.8867 47.3704 26.2571 46.5938 26.2571H42.2812V23.4446H46.5938ZM2.8125 3.66333H45.1875V20.6321H2.8125V3.66333ZM14.1562 26.2571V23.4446H33.8438V26.2571H14.1562ZM8.53125 23.4446H11.3438V26.2571H8.53125V23.4446ZM45.1875 46.0383H2.8125V29.0696H45.1875V46.0383ZM39.4688 26.2571H36.6562V23.4446H39.4688V26.2571Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M7.125 31.8821C6.34838 31.8821 5.71875 32.5117 5.71875 33.2883V41.7258C5.71875 42.5025 6.34838 43.1321 7.125 43.1321C7.90163 43.1321 8.53125 42.5025 8.53125 41.7258V33.2883C8.53125 32.5117 7.90163 31.8821 7.125 31.8821Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M12.75 31.8821C11.9734 31.8821 11.3438 32.5117 11.3438 33.2883V41.7258C11.3438 42.5025 11.9734 43.1321 12.75 43.1321C13.5266 43.1321 14.1563 42.5025 14.1563 41.7258V33.2883C14.1563 32.5117 13.5266 31.8821 12.75 31.8821Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M18.375 31.8821C17.5984 31.8821 16.9688 32.5117 16.9688 33.2883V41.7258C16.9688 42.5025 17.5984 43.1321 18.375 43.1321C19.1516 43.1321 19.7813 42.5025 19.7813 41.7258V33.2883C19.7813 32.5117 19.1516 31.8821 18.375 31.8821Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M24 31.8821C23.2234 31.8821 22.5938 32.5117 22.5938 33.2883V41.7258C22.5938 42.5025 23.2234 43.1321 24 43.1321C24.7766 43.1321 25.4063 42.5025 25.4063 41.7258V33.2883C25.4063 32.5117 24.7766 31.8821 24 31.8821Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M29.625 31.8821C28.8484 31.8821 28.2188 32.5117 28.2188 33.2883V41.7258C28.2188 42.5025 28.8484 43.1321 29.625 43.1321C30.4016 43.1321 31.0312 42.5025 31.0312 41.7258V33.2883C31.0312 32.5117 30.4016 31.8821 29.625 31.8821Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M35.25 31.8821C34.4734 31.8821 33.8438 32.5117 33.8438 33.2883V41.7258C33.8438 42.5025 34.4734 43.1321 35.25 43.1321C36.0266 43.1321 36.6563 42.5025 36.6563 41.7258V33.2883C36.6563 32.5117 36.0266 31.8821 35.25 31.8821Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M39.4688 33.2883V41.7258C39.4688 42.5025 40.0984 43.1321 40.875 43.1321C41.6516 43.1321 42.2813 42.5025 42.2813 41.7258V33.2883C42.2813 32.5117 41.6516 31.8821 40.875 31.8821C40.0984 31.8821 39.4688 32.5117 39.4688 33.2883Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M8.53125 16.4133V7.97583C8.53125 7.1992 7.90163 6.56958 7.125 6.56958C6.34838 6.56958 5.71875 7.1992 5.71875 7.97583V16.4133C5.71875 17.19 6.34838 17.8196 7.125 17.8196C7.90163 17.8196 8.53125 17.19 8.53125 16.4133Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M12.75 17.8196C13.5266 17.8196 14.1563 17.19 14.1563 16.4133V7.97583C14.1563 7.1992 13.5266 6.56958 12.75 6.56958C11.9734 6.56958 11.3438 7.1992 11.3438 7.97583V16.4133C11.3438 17.19 11.9734 17.8196 12.75 17.8196Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M18.375 17.8196C19.1516 17.8196 19.7813 17.19 19.7813 16.4133V7.97583C19.7813 7.1992 19.1516 6.56958 18.375 6.56958C17.5984 6.56958 16.9688 7.1992 16.9688 7.97583V16.4133C16.9688 17.19 17.5984 17.8196 18.375 17.8196Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M24 17.8196C24.7766 17.8196 25.4063 17.19 25.4063 16.4133V7.97583C25.4063 7.1992 24.7766 6.56958 24 6.56958C23.2234 6.56958 22.5938 7.1992 22.5938 7.97583V16.4133C22.5938 17.19 23.2234 17.8196 24 17.8196Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M29.625 17.8196C30.4016 17.8196 31.0312 17.19 31.0312 16.4133V7.97583C31.0312 7.1992 30.4016 6.56958 29.625 6.56958C28.8484 6.56958 28.2188 7.1992 28.2188 7.97583V16.4133C28.2188 17.19 28.8484 17.8196 29.625 17.8196Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M35.25 17.8196C36.0266 17.8196 36.6563 17.19 36.6563 16.4133V7.97583C36.6563 7.1992 36.0266 6.56958 35.25 6.56958C34.4734 6.56958 33.8438 7.1992 33.8438 7.97583V16.4133C33.8438 17.19 34.4734 17.8196 35.25 17.8196Z"
+                                fill="#1E478A" />
+                            <path
+                                d="M40.875 17.8196C41.6516 17.8196 42.2813 17.19 42.2813 16.4133V7.97583C42.2813 7.1992 41.6516 6.56958 40.875 6.56958C40.0984 6.56958 39.4688 7.1992 39.4688 7.97583V16.4133C39.4688 17.19 40.0984 17.8196 40.875 17.8196Z"
+                                fill="#1E478A" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_199_724">
+                                <rect width="48" height="48" fill="white" transform="translate(0 0.85083)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none">
+                        <g clip-path="url(#clip0_199_643)">
+                            <path
+                                d="M46.5938 41.5196H38.9626V2.25708C38.9626 1.48046 38.333 0.85083 37.5563 0.85083C36.7797 0.85083 36.1501 1.48046 36.1501 2.25708V19.6344L29.8101 5.14327C28.7569 2.73624 25.8741 0.85083 23.2469 0.85083H9.69066C6.83887 0.85083 4.51875 3.17086 4.51875 6.02264V24.9935C1.97438 25.3157 0 27.4923 0 30.1227V39.1601C0 42.012 2.32012 44.3321 5.17191 44.3321H6.195C6.82809 46.9224 9.16753 48.8508 11.95 48.8508C14.7324 48.8508 17.0717 46.9224 17.7048 44.3321H27.2826C27.9157 46.9224 30.2551 48.8508 33.0376 48.8508C35.82 48.8508 38.1593 46.9224 38.7923 44.3321H46.5938C47.3704 44.3321 48 43.7025 48 42.9258C48 42.1492 47.3704 41.5196 46.5938 41.5196ZM9.69066 3.66333H23.2469C24.7628 3.66333 26.6257 4.88171 27.2333 6.27071L35.4061 24.9509H32.1138L24.9992 17.8365L26.1351 16.7006C26.6842 16.1515 26.6842 15.261 26.1351 14.7119C25.586 14.1628 24.6955 14.1628 24.1463 14.7119L22.0165 16.8417C22.0163 16.8419 22.0163 16.842 22.0161 16.8421C22.0159 16.8423 22.0158 16.8424 22.0156 16.8426L19.8859 18.9724C19.3367 19.5215 19.3367 20.412 19.8859 20.9611C20.1605 21.2357 20.5204 21.373 20.8802 21.373C21.2401 21.373 21.6 21.2356 21.8745 20.9611L23.0103 19.8253L28.1362 24.951H13.3563V14.307C13.3563 13.5304 12.7267 12.9008 11.95 12.9008C11.1734 12.9008 10.5438 13.5304 10.5438 14.307V24.9508H7.33125V6.02264C7.33125 4.72167 8.38969 3.66333 9.69066 3.66333ZM2.8125 39.1602V30.1228C2.8125 28.8218 3.87094 27.7634 5.17191 27.7634H36.1501L36.1499 37.8871C35.2448 37.3259 34.1786 37.0008 33.0376 37.0008C30.2551 37.0008 27.9157 38.9293 27.2826 41.5196H17.7048C17.0717 38.9293 14.7324 37.0008 11.95 37.0008C9.16753 37.0008 6.82809 38.9293 6.195 41.5196H5.17191C3.87094 41.5196 2.8125 40.4611 2.8125 39.1602ZM11.95 46.0383C10.2346 46.0383 8.83894 44.6433 8.83762 42.9283C8.83762 42.9273 8.83772 42.9266 8.83772 42.9258C8.83772 42.925 8.83762 42.9242 8.83762 42.9234C8.83894 41.2083 10.2346 39.8133 11.95 39.8133C13.6661 39.8133 15.0623 41.2096 15.0623 42.9258C15.0623 44.642 13.666 46.0383 11.95 46.0383ZM33.0375 46.0383C31.3212 46.0383 29.925 44.642 29.925 42.9258C29.925 41.2096 31.3213 39.8133 33.0375 39.8133C34.7536 39.8133 36.1497 41.2096 36.1497 42.9258C36.1497 44.642 34.7536 46.0383 33.0375 46.0383Z"
+                                fill="#1E478A" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_199_643">
+                                <rect width="48" height="48" fill="white" transform="translate(0 0.85083)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none">
+                        <path
+                            d="M21.1875 17.8196C20.4109 17.8196 19.7812 18.4492 19.7812 19.2258V24.8508C19.7812 25.6275 20.4109 26.2571 21.1875 26.2571H25.4062V30.4758C25.4062 31.2525 26.0359 31.8821 26.8125 31.8821C27.5891 31.8821 28.2188 31.2525 28.2188 30.4758V19.2258C28.2188 18.4492 27.5891 17.8196 26.8125 17.8196C26.0359 17.8196 25.4062 18.4492 25.4062 19.2258V23.4446H22.5938V19.2258C22.5938 18.4492 21.9641 17.8196 21.1875 17.8196Z"
+                            fill="#1E478A" />
+                        <path
+                            d="M16.9688 22.0383C16.9688 19.7121 15.0763 17.8196 12.75 17.8196C10.4238 17.8196 8.5313 19.7121 8.5313 22.0383C8.5313 22.815 9.16092 23.4446 9.93755 23.4446C10.7142 23.4446 11.3438 22.815 11.3438 22.0383C11.3438 21.2629 11.9746 20.6321 12.75 20.6321C13.5255 20.6321 14.1563 21.2629 14.1563 22.0383C14.1563 22.3452 14.0595 22.6364 13.8765 22.8805L8.81255 29.6321C8.49296 30.0582 8.44149 30.6283 8.67971 31.1047C8.91792 31.5811 9.40486 31.8821 9.93755 31.8821H15.5625C16.3392 31.8821 16.9688 31.2525 16.9688 30.4758C16.9688 29.6992 16.3392 29.0696 15.5625 29.0696H12.7501L16.1265 24.568C16.6775 23.8333 16.9688 22.9585 16.9688 22.0383Z"
+                            fill="#1E478A" />
+                        <path
+                            d="M32.4375 17.8196C31.6609 17.8196 31.0312 18.4492 31.0312 19.2258V30.4758C31.0312 31.2525 31.6609 31.8821 32.4375 31.8821C33.2141 31.8821 33.8438 31.2525 33.8438 30.4758V27.6633C33.8438 26.8879 34.4746 26.2571 35.25 26.2571C36.0254 26.2571 36.6562 26.8879 36.6562 27.6633V30.4758C36.6562 31.2525 37.2859 31.8821 38.0625 31.8821C38.8391 31.8821 39.4688 31.2525 39.4688 30.4758V27.6633C39.4688 25.3371 37.5762 23.4446 35.25 23.4446C34.7571 23.4446 34.2839 23.5304 33.8438 23.6865V19.2258C33.8438 18.4492 33.2141 17.8196 32.4375 17.8196Z"
+                            fill="#1E478A" />
+                        <path
+                            d="M24 0.85083C10.7855 0.85083 0 11.6363 0 24.8508C0 25.6275 0.629625 26.2571 1.40625 26.2571H4.21875C4.99538 26.2571 5.625 25.6275 5.625 24.8508C5.625 24.0742 4.99538 23.4446 4.21875 23.4446H2.86031C3.55612 12.88 12.0292 4.40696 22.5938 3.71114V5.06958C22.5938 5.84621 23.2234 6.47583 24 6.47583C24.7766 6.47583 25.4062 5.84621 25.4062 5.06958V3.71114C35.9708 4.40696 44.4439 12.88 45.1397 23.4446H43.7812C43.0046 23.4446 42.375 24.0742 42.375 24.8508C42.375 25.6275 43.0046 26.2571 43.7812 26.2571H45.1397C44.4439 36.8217 35.9708 45.2947 25.4062 45.9905V44.6321C25.4062 43.8555 24.7766 43.2258 24 43.2258C23.2234 43.2258 22.5938 43.8555 22.5938 44.6321V45.9875C16.5014 45.564 10.7639 42.4113 7.03341 37.3699C6.61688 36.807 5.84972 36.6363 5.23378 36.9695C4.61794 37.3027 4.341 38.0383 4.58428 38.6949C4.67269 38.9337 4.76634 39.214 4.76719 39.2166L6.75591 45.1829C7.00153 45.9195 7.79766 46.318 8.53472 46.0722C9.2715 45.8265 9.66966 45.0302 9.42413 44.2934L9.20372 43.6324C13.5789 47.121 18.8157 48.8508 24 48.8508C37.2145 48.8508 48 38.0654 48 24.8508C48 11.6363 37.2145 0.85083 24 0.85083Z"
+                            fill="#1E478A" />
+                    </svg>
+                </div>
+            </div>
+            <div class="flex flex-row gap-[24px]">
+                <button
+                    class=" text-white bg-[#257BEB] flex flex-row items-center gap-[24px] py-[14px] px-[32px] justify-center w-[250px] max-w-[250px]">Raktárbérlés
+                    <ion-icon name="chevron-forward-outline"></ion-icon></button>
+                <button
+                    class=" text-[#257BEB] border border-[#257BEB] flex flex-row items-center gap-[24px] py-[14px] px-[32px] justify-center w-[250px] max-w-[250px]">Kapcsolat</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        function onToggleMenu() {
+            const navLinks = document.getElementById("navbar-cta"); navLinks.classList.toggle("hidden")
+        } </script>
+
+    <script src="assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
